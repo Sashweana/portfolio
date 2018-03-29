@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Blog</title>
+    <title>Sashweana Rajendran</title>
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +11,14 @@
   </head>
 
   <body>
+  	<header id="main_navigation" class="clearfix">
+		<a href="index.html" class="name">Sashweana</a>
+		<nav>
+			<%= link_to "Articles", posts_path %>
+			<a href="">Projects</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+	</header>
     <%= yield %>
   </body>
 </html>
