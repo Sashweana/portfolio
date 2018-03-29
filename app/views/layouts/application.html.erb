@@ -11,14 +11,26 @@
   </head>
 
   <body>
+
   	<header id="main_navigation" class="clearfix">
-		<a href="index.html" class="name">Sashweana</a>
+    <%= link_to "Sashweana", root_path, class: "name" %>
 		<nav>
 			<%= link_to "Articles", posts_path %>
 			<a href="">Projects</a>
 			<a href="contact.html">Contact</a>
 		</nav>
 	</header>
+
     <%= yield %>
+
+    <footer id="main_footer">
+    <p class="copyright">&copy; 2018 Sashweana Rajendran</p>
+    <nav>
+      <a href="https://twitter.com/DamnItsSash?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/sashweana-rajendran-02443994/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/Sashweana" target="_blank"><i class="fab fa-github"></i></a>
+    </nav>
+  </footer>
+
   </body>
 </html>
