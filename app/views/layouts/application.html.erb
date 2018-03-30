@@ -11,7 +11,8 @@
   </head>
 
   <body>
-
+  
+  <!-- Header -->
   	<header id="main_navigation" class="clearfix">
     <%= link_to "Sashweana", root_path, class: "name" %>
 		<nav>
@@ -21,8 +22,16 @@
 		</nav>
 	</header>
 
+  <!-- Flash Message -->
+    <% if notice %>
+      <p class="notice"><%= notice %></p>
+    <% elsif alert %>
+      <p class="alert"><%= alert %></p>
+    <% end %>
+
     <%= yield %>
 
+    <!-- Footer -->
     <footer id="main_footer">
     <p class="copyright">&copy; 2018 Sashweana Rajendran</p>
     <nav>
