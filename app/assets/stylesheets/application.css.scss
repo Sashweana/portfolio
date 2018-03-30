@@ -117,6 +117,9 @@ hr {
 			text-decoration: none;
 			margin: 0 1rem;
 			font-size: 1rem;
+			&:hover {
+				color: $highlight;
+			}
 		}
 	}
 }
